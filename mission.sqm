@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=1507;
+		nextID=1509;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=178;
+		nextID=208;
 	};
 	class Camera
 	{
-		pos[]={12246.909,279.31393,12592.081};
-		dir[]={-0.74371988,-0.6126945,0.26745918};
-		up[]={-0.5765568,0.7903046,0.20734555};
-		aside[]={0.33841223,-2.9039074e-007,0.94101894};
+		pos[]={12269.847,200.68135,12770.683};
+		dir[]={-0.66183066,-0.26749995,-0.70045286};
+		up[]={-0.18377045,0.96352571,-0.19449542};
+		aside[]={-0.72694069,3.0762749e-008,0.68685544};
 	};
 };
 binarizationWanted=0;
@@ -356,13 +356,14 @@ class Mission
 		year=2007;
 		month=11;
 		day=9;
-		hour=6;
+		hour=8;
+		minute=-30;
 		startFogDecay=0.014;
 		forecastFogDecay=0.014;
 	};
 	class Entities
 	{
-		items=159;
+		items=161;
 		class Item0
 		{
 			dataType="Logic";
@@ -4049,8 +4050,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11983.486,161.87718,12656.703};
-						angles[]={0,1.0248975,0};
+						position[]={11983.486,161.87752,12656.703};
+						angles[]={0,1.0248922,0};
 					};
 					side="Empty";
 					class Attributes
@@ -4058,7 +4059,30 @@ class Mission
 					};
 					id=804;
 					type="UK3CB_BAF_Box_L111A1_Ammo";
-					atlOffset=2.7736664;
+					atlOffset=2.7740021;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ammoBox";
+							expression="[_this,_value] call bis_fnc_initAmmoBox;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="[[[[],[]],[[""UK3CB_BAF_127_100Rnd""],[6]],[[],[]],[[],[]]],false]";
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 				class Item41
 				{
@@ -5475,8 +5499,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11970.69,168.35835,12516.708};
-						angles[]={0,4.5211563,0};
+						position[]={11970.69,168.35875,12516.708};
+						angles[]={0,4.521153,0};
 					};
 					side="Empty";
 					class Attributes
@@ -5484,11 +5508,34 @@ class Mission
 					};
 					id=803;
 					type="UK3CB_BAF_Box_L134A1_Ammo";
-					atlOffset=3.7806091;
+					atlOffset=3.7810059;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ammoBox";
+							expression="[_this,_value] call bis_fnc_initAmmoBox;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="[[[[],[]],[[""UK3CB_BAF_32Rnd_40mm_G_Box""],[3]],[[],[]],[[""usm_pack_alice""],[1]]],false]";
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 			};
 			id=809;
-			atlOffset=1.8061066;
+			atlOffset=1.8063202;
 		};
 		class Item4
 		{
@@ -7284,7 +7331,7 @@ class Mission
 			side="West";
 			class Entities
 			{
-				items=4;
+				items=3;
 				class Item0
 				{
 					dataType="Object";
@@ -7465,86 +7512,6 @@ class Mission
 					};
 					id=856;
 					type="UK3CB_BAF_RO_MTP";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male04ENGB";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.05;
-								};
-							};
-						};
-						nAttributes=3;
-					};
-				};
-				class Item3
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={12126.619,158.91008,12638.198};
-						angles[]={6.2698579,5.2671943,0};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						init="call{[this, ""BAF_AAR""] call FNC_GearScript; [this, ""ACRE_PRC343"", 3] call FNC_SetRadio;}";
-						description="  3-3 Section / C Team / Assistant Automatic Rifleman";
-						isPlayable=1;
-					};
-					id=1498;
-					type="UK3CB_BAF_Rifleman_MTP";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -9726,8 +9693,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={12159.654,161.50639,12621.894};
-				angles[]={6.2698579,5.1316967,0};
+				position[]={12159.654,161.50662,12621.894};
+				angles[]={6.2698507,5.1317043,0};
 			};
 			side="Empty";
 			flags=4;
@@ -9737,7 +9704,6 @@ class Mission
 			};
 			id=951;
 			type="UK3CB_BAF_LandRover_Amb_FFR_Green_A_DPMW";
-			atlOffset=-0.00022888184;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -9793,7 +9759,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[],[]],[[],[]],[[""ACE_adenosine"",""ACE_fieldDressing"",""ACE_elasticBandage"",""ACE_quikclot"",""ACE_bloodIV_250"",""ACE_bloodIV_500"",""ACE_epinephrine"",""ACE_morphine"",""ACE_packingBandage"",""ACE_personalAidKit"",""ACE_plasmaIV_250"",""ACE_plasmaIV_500"",""ACE_salineIV_250"",""ACE_salineIV_500"",""ACE_surgicalKit""],[20,40,40,40,20,20,20,20,40,25,20,20,20,20,26]],[[],[]]],false]";
+							value="[[[[],[]],[[],[]],[[""ACE_adenosine"",""ACE_fieldDressing"",""ACE_elasticBandage"",""ACE_quikclot"",""ACE_bloodIV_250"",""ACE_bloodIV_500"",""ACE_epinephrine"",""ACE_morphine"",""ACE_packingBandage"",""ACE_personalAidKit"",""ACE_plasmaIV_250"",""ACE_plasmaIV_500"",""ACE_salineIV_250"",""ACE_salineIV_500"",""ACE_surgicalKit""],[20,40,40,40,20,20,20,20,40,25,20,20,20,20,26]],[[""usm_pack_alice_medic""],[3]]],false]";
 						};
 					};
 				};
@@ -11064,7 +11030,7 @@ class Mission
 			};
 			id=996;
 			type="rhs_gaz66_ap2_vdv";
-			atlOffset=0.4118042;
+			atlOffset=0.38848877;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -11238,6 +11204,7 @@ class Mission
 			};
 			id=1000;
 			type="rhs_bmd1p";
+			atlOffset=-0.0019378662;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -11563,6 +11530,7 @@ class Mission
 			};
 			id=1003;
 			type="rhs_bmd1p";
+			atlOffset=-0.001373291;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -11884,8 +11852,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8612.1025,184.20421,11937.946};
-						angles[]={0,0.65788615,0};
+						position[]={8612.1025,184.20381,11937.946};
+						angles[]={0,0.65788442,0};
 					};
 					side="East";
 					flags=3;
@@ -11893,12 +11861,12 @@ class Mission
 					{
 						rank="CAPTAIN";
 						init="call{[this, ""VDV_PL""] call FNC_GearScript; [this, ""ACRE_PRC343"", 10] call FNC_SetRadio; [this, ""ACRE_PRC148"", 4, ""LEFT""] call FNC_SetRadio;}";
-						description="Streltsy 0 / Company Commander @Streltsy 0";
+						description="Streltsy 110 / Company Commander @Streltsy 110";
 						isPlayable=1;
 					};
 					id=1007;
 					type="rhs_vdv_flora_officer";
-					atlOffset=0.41339111;
+					atlOffset=0.41299438;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -11985,8 +11953,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8610.002,184.15887,11935.916};
-						angles[]={0,0.65788615,0};
+						position[]={8610.002,184.15848,11935.916};
+						angles[]={0,0.65788442,0};
 					};
 					side="East";
 					flags=1;
@@ -11994,12 +11962,12 @@ class Mission
 					{
 						rank="LIEUTENANT";
 						init="call{[this, ""VDV_PL""] call FNC_GearScript; [this, ""ACRE_PRC343"", 10] call FNC_SetRadio; [this, ""ACRE_PRC148"", 4, ""LEFT""] call FNC_SetRadio;}";
-						description="Streltsy 0 / Company 2IC";
+						description="Streltsy 110 / Company 2IC";
 						isPlayable=1;
 					};
 					id=1009;
 					type="rhs_vdv_flora_officer";
-					atlOffset=0.41339111;
+					atlOffset=0.41299438;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -12086,19 +12054,19 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8607.9648,183.92642,11933.892};
-						angles[]={0,0.65788615,0};
+						position[]={8607.9648,183.92603,11933.892};
+						angles[]={0,0.65788442,0};
 					};
 					side="East";
 					class Attributes
 					{
 						init="call{[this, ""VDV_DM""] call FNC_GearScript; [this, ""ACRE_PRC148"", 4, ""LEFT""] call FNC_SetRadio;}";
-						description="Streltsy 0 / Marksman";
+						description="Streltsy 110 / Marksman";
 						isPlayable=1;
 					};
 					id=1012;
 					type="rhs_vdv_flora_marksman";
-					atlOffset=0.41339111;
+					atlOffset=0.41299438;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -12185,19 +12153,19 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8606.3223,184.07962,11932.346};
-						angles[]={0,0.65788615,0};
+						position[]={8606.3223,184.07922,11932.346};
+						angles[]={0,0.65788442,0};
 					};
 					side="East";
 					class Attributes
 					{
 						init="call{[this, ""VDV_DM""] call FNC_GearScript; [this, ""ACRE_PRC148"", 4, ""LEFT""] call FNC_SetRadio;}";
-						description="Streltsy 0 / Marksman";
+						description="Streltsy 110 / Marksman";
 						isPlayable=1;
 					};
 					id=1014;
 					type="rhs_vdv_flora_marksman";
-					atlOffset=0.41339111;
+					atlOffset=0.41299438;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -12284,7 +12252,7 @@ class Mission
 			{
 			};
 			id=1006;
-			atlOffset=0.41339111;
+			atlOffset=0.41299438;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -12302,7 +12270,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="Streltsy 0";
+							value="Streltsy 110";
 						};
 					};
 				};
@@ -12596,7 +12564,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8733.832,198.70547,11854.074};
+						position[]={8733.832,198.7052,11854.074};
 						angles[]={0,1.68241,0};
 					};
 					side="East";
@@ -12605,12 +12573,12 @@ class Mission
 					{
 						rank="LIEUTENANT";
 						init="call{[this, ""VDV_PL""] call FNC_GearScript; [this, ""ACRE_PRC343"", 1] call FNC_SetRadio; [this, ""ACRE_PRC148"", 1, ""LEFT""] call FNC_SetRadio;}";
-						description="Streltsy 1-0 / Platoon Leader @Streltsy 1-0";
+						description="Streltsy 111'a / Platoon Leader @Streltsy 111'A";
 						isPlayable=1;
 					};
 					id=1028;
 					type="rhs_vdv_flora_officer_armored";
-					atlOffset=0.41325378;
+					atlOffset=0.41297913;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -12697,7 +12665,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8732.2764,198.67279,11854.188};
+						position[]={8732.2764,198.67252,11854.188};
 						angles[]={0,1.68241,0};
 					};
 					side="East";
@@ -12705,12 +12673,12 @@ class Mission
 					{
 						rank="SERGEANT";
 						init="call{[this, ""VDV_PL""] call FNC_GearScript; [this, ""ACRE_PRC343"", 1] call FNC_SetRadio; [this, ""ACRE_PRC148"", 1, ""LEFT""] call FNC_SetRadio;}";
-						description="Streltsy 1-0 / Platoon Sergeant";
+						description="Streltsy 111'A / Platoon Sergeant";
 						isPlayable=1;
 					};
 					id=1031;
 					type="rhs_vdv_flora_sergeant";
-					atlOffset=0.41326904;
+					atlOffset=0.41299438;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -12797,7 +12765,7 @@ class Mission
 			{
 			};
 			id=1026;
-			atlOffset=0.41325378;
+			atlOffset=0.41297913;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -12815,7 +12783,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="Streltsy 1-0";
+							value="Streltsy 111'A";
 						};
 					};
 				};
@@ -12853,8 +12821,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8709.6621,198.57872,11845.015};
-						angles[]={0,0.20422938,0};
+						position[]={8709.6621,198.57846,11845.015};
+						angles[]={0,0.20422098,0};
 					};
 					side="East";
 					flags=2;
@@ -12862,12 +12830,12 @@ class Mission
 					{
 						rank="SERGEANT";
 						init="call{[this, ""VDV_SL""] call FNC_GearScript; [this, ""ACRE_PRC343"", 1] call FNC_SetRadio; [this, ""ACRE_PRC148"", 1, ""LEFT""] call FNC_SetRadio;}";
-						description="Streltsy 1-1 / A Team / Section Leader @Streltsy 1-1";
+						description="Streltsy 111 / A Team / Section Leader @Streltsy 111";
 						isPlayable=1;
 					};
 					id=1033;
 					type="rhs_vdv_flora_sergeant";
-					atlOffset=0.42025757;
+					atlOffset=0.41999817;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -12954,19 +12922,19 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8709.3379,198.68031,11843.018};
-						angles[]={0,0.20422938,0};
+						position[]={8709.3379,198.68004,11843.018};
+						angles[]={0,0.20422098,0};
 					};
 					side="East";
 					class Attributes
 					{
 						init="call{[this, ""VDV_MG""] call FNC_GearScript; [this, ""ACRE_PRC343"", 1] call FNC_SetRadio; [this, ""ACRE_PRC343"", 1] call FNC_SetRadio;}";
-						description="  Streltsy 1-1 / A Team / Machine Gunner";
+						description="  Streltsy 111 / A Team / Machine Gunner";
 						isPlayable=1;
 					};
 					id=1036;
 					type="rhs_vdv_flora_machinegunner";
-					atlOffset=0.41326904;
+					atlOffset=0.41299438;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -13053,20 +13021,20 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8711.8896,198.68335,11844.441};
-						angles[]={0,0.20422938,0};
+						position[]={8711.8896,198.68307,11844.441};
+						angles[]={0,0.20422098,0};
 					};
 					side="East";
 					class Attributes
 					{
 						rank="CORPORAL";
 						init="call{[this, ""VDV_TL""] call FNC_GearScript; [this, ""ACRE_PRC343"", 1] call FNC_SetRadio; [this, ""ACRE_PRC343"", 1] call FNC_SetRadio;}";
-						description="Streltsy 1-1 / B Team / Team Leader";
+						description="Streltsy 111 / B Team / Team Leader";
 						isPlayable=1;
 					};
 					id=1039;
 					type="rhs_vdv_flora_junior_sergeant";
-					atlOffset=0.41326904;
+					atlOffset=0.41299438;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -13153,19 +13121,19 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8712.4189,198.76167,11843.441};
-						angles[]={0,0.20422938,0};
+						position[]={8712.4189,198.7614,11843.441};
+						angles[]={0,0.20422098,0};
 					};
 					side="East";
 					class Attributes
 					{
 						init="call{[this, ""VDV_ARPG""] call FNC_GearScript; [this, ""ACRE_PRC343"", 1] call FNC_SetRadio; [this, ""ACRE_PRC343"", 1] call FNC_SetRadio;}";
-						description="  Streltsy 1-1 / B Team / RPG Assistant";
+						description="  Streltsy 111 / B Team / RPG Assistant";
 						isPlayable=1;
 					};
 					id=1042;
 					type="rhs_vdv_flora_rifleman";
-					atlOffset=0.41326904;
+					atlOffset=0.41299438;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -13252,19 +13220,19 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8712.2354,198.83224,11842.1};
-						angles[]={0,0.20422938,0};
+						position[]={8712.2354,198.83197,11842.1};
+						angles[]={0,0.20422098,0};
 					};
 					side="East";
 					class Attributes
 					{
 						init="call{[this, ""VDV_RPG""] call FNC_GearScript; [this, ""ACRE_PRC343"", 1] call FNC_SetRadio; [this, ""ACRE_PRC343"", 1] call FNC_SetRadio;}";
-						description="  Streltsy 1-1 / B Team / RPG Gunner";
+						description="  Streltsy 111 / B Team / RPG Gunner";
 						isPlayable=1;
 					};
 					id=1045;
 					type="rhs_vdv_flora_at";
-					atlOffset=0.41325378;
+					atlOffset=0.41297913;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -13351,20 +13319,20 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8713.8682,198.83647,11843.032};
-						angles[]={0,0.20422938,0};
+						position[]={8713.8682,198.8362,11843.032};
+						angles[]={0,0.20422098,0};
 					};
 					side="East";
 					class Attributes
 					{
 						rank="CORPORAL";
 						init="call{[this, ""VDV_CREW""] call FNC_GearScript; [this, ""ACRE_PRC343"", 1] call FNC_SetRadio; [this, ""ACRE_PRC343"", 1] call FNC_SetRadio;}";
-						description="Streltsy 1-1 / C Team / BMD-1 Gunner";
+						description="Streltsy 111 / C Team / BMD-1 Gunner";
 						isPlayable=1;
 					};
 					id=1238;
 					type="rhs_vdv_flora_combatcrew";
-					atlOffset=0.41326904;
+					atlOffset=0.41299438;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -13451,19 +13419,19 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8714.5527,198.98828,11840.644};
-						angles[]={0,0.20422938,0};
+						position[]={8714.5527,198.98801,11840.644};
+						angles[]={0,0.20422098,0};
 					};
 					side="East";
 					class Attributes
 					{
 						init="call{[this, ""VDV_CREW""] call FNC_GearScript; [this, ""ACRE_PRC343"", 1] call FNC_SetRadio; [this, ""ACRE_PRC343"", 1] call FNC_SetRadio;}";
-						description="Streltsy 1-1 / C Team / BMD-1 Driver";
+						description="Streltsy 111 / C Team / BMD-1 Driver";
 						isPlayable=1;
 					};
 					id=1239;
 					type="rhs_vdv_flora_combatcrew";
-					atlOffset=0.41325378;
+					atlOffset=0.41297913;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -13550,7 +13518,7 @@ class Mission
 			{
 			};
 			id=1032;
-			atlOffset=0.42025757;
+			atlOffset=0.41999817;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -13568,7 +13536,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="Streltsy 1-1";
+							value="Streltsy 111";
 						};
 					};
 				};
@@ -13606,8 +13574,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8745.5293,199.63995,11831.01};
-						angles[]={0.051953323,0.12037392,0.015998369};
+						position[]={8745.5303,199.63997,11831.01};
+						angles[]={0.051958453,0.12037536,0.016004669};
 					};
 					side="East";
 					flags=6;
@@ -13615,7 +13583,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						init="call{[this, ""VDV_SL""] call FNC_GearScript; [this, ""ACRE_PRC343"", 2] call FNC_SetRadio; [this, ""ACRE_PRC148"", 1, ""LEFT""] call FNC_SetRadio;}";
-						description="Streltsy 1-2 / A Team / Section Leader @Streltsy 1-2";
+						description="Streltsy 112 / A Team / Section Leader @Streltsy 112";
 						isPlayable=1;
 					};
 					id=1051;
@@ -13707,14 +13675,14 @@ class Mission
 					class PositionInfo
 					{
 						position[]={8745.375,199.74242,11828.992};
-						angles[]={0.051953323,0.12037392,0.015998369};
+						angles[]={0.051958453,0.12037536,0.016004669};
 					};
 					side="East";
 					flags=4;
 					class Attributes
 					{
 						init="call{[this, ""VDV_MG""] call FNC_GearScript; [this, ""ACRE_PRC343"", 2] call FNC_SetRadio;}";
-						description="  Streltsy 1-2 / A Team / Machine Gunner";
+						description="  Streltsy 112 / A Team / Machine Gunner";
 						isPlayable=1;
 					};
 					id=1052;
@@ -13806,7 +13774,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={8747.7988,199.69627,11830.625};
-						angles[]={0.051953323,0.12037392,0.015998369};
+						angles[]={0.051958453,0.12037536,0.016004669};
 					};
 					side="East";
 					flags=4;
@@ -13814,7 +13782,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						init="call{[this, ""VDV_TL""] call FNC_GearScript; [this, ""ACRE_PRC343"", 2] call FNC_SetRadio;}";
-						description="Streltsy 1-2 / B Team / Team Leader";
+						description="Streltsy 112 / B Team / Team Leader";
 						isPlayable=1;
 					};
 					id=1053;
@@ -13906,14 +13874,14 @@ class Mission
 					class PositionInfo
 					{
 						position[]={8748.4092,199.75554,11829.673};
-						angles[]={0.051953323,0.12037392,0.015998369};
+						angles[]={0.051958453,0.12037536,0.016004669};
 					};
 					side="East";
 					flags=4;
 					class Attributes
 					{
 						init="call{[this, ""VDV_ARPG""] call FNC_GearScript; [this, ""ACRE_PRC343"", 2] call FNC_SetRadio;}";
-						description="  Streltsy 1-2 / B Team / RPG Assistant";
+						description="  Streltsy 112 / B Team / RPG Assistant";
 						isPlayable=1;
 					};
 					id=1054;
@@ -14004,15 +13972,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8748.3389,199.82477,11828.32};
-						angles[]={0.051953323,0.12037392,0.015998369};
+						position[]={8748.3389,199.82481,11828.319};
+						angles[]={0.051958453,0.12037536,0.016004669};
 					};
 					side="East";
 					flags=4;
 					class Attributes
 					{
 						init="call{[this, ""VDV_RPG""] call FNC_GearScript; [this, ""ACRE_PRC343"", 2] call FNC_SetRadio;}";
-						description="  Streltsy 1-2 / B Team / RPG Gunner";
+						description="  Streltsy 112 / B Team / RPG Gunner";
 						isPlayable=1;
 					};
 					id=1055;
@@ -14103,8 +14071,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8751.0127,199.88745,11827.938};
-						angles[]={0.051953323,0.12037392,0.015998369};
+						position[]={8751.0127,199.88741,11827.938};
+						angles[]={0.051958453,0.12037536,0.016004669};
 					};
 					side="East";
 					flags=4;
@@ -14112,7 +14080,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						init="call{[this, ""VDV_CREW""] call FNC_GearScript; [this, ""ACRE_PRC343"", 2] call FNC_SetRadio;}";
-						description="Streltsy 1-2 / C Team / BMD-1 Gunner";
+						description="Streltsy 112 / C Team / BMD-1 Gunner";
 						isPlayable=1;
 					};
 					id=1235;
@@ -14204,14 +14172,14 @@ class Mission
 					class PositionInfo
 					{
 						position[]={8750.3135,199.93712,11826.84};
-						angles[]={0.057272207,0.12037392,0.015998369};
+						angles[]={0.05726425,0.12037536,0.016004669};
 					};
 					side="East";
 					flags=4;
 					class Attributes
 					{
 						init="call{[this, ""VDV_CREW""] call FNC_GearScript; [this, ""ACRE_PRC343"", 2] call FNC_SetRadio;}";
-						description="Streltsy 1-2 / C Team / BMD-1 Driver";
+						description="Streltsy 112 / C Team / BMD-1 Driver";
 						isPlayable=1;
 					};
 					id=1236;
@@ -14320,7 +14288,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="Streltsy 1-2";
+							value="Streltsy 112";
 						};
 					};
 				};
@@ -14359,7 +14327,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={8756.5107,197.37163,11862.91};
-						angles[]={0.18067631,0.37655732,0.017332481};
+						angles[]={0.18067649,0.37655479,0.01733112};
 					};
 					side="East";
 					flags=6;
@@ -14367,7 +14335,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						init="call{[this, ""VDV_SL""] call FNC_GearScript; [this, ""ACRE_PRC343"", 3] call FNC_SetRadio; [this, ""ACRE_PRC148"", 1, ""LEFT""] call FNC_SetRadio;}";
-						description="Streltsy 1-3 / A Team / Section Leader @Streltsy 1-3";
+						description="Streltsy 113 / A Team / Section Leader @Streltsy 113";
 						isPlayable=1;
 					};
 					id=1061;
@@ -14459,14 +14427,14 @@ class Mission
 					class PositionInfo
 					{
 						position[]={8755.8496,197.71606,11860.998};
-						angles[]={0.18969178,0.37655732,0.0080009829};
+						angles[]={0.18969984,0.37655479,0.0079936078};
 					};
 					side="East";
 					flags=4;
 					class Attributes
 					{
 						init="call{[this, ""VDV_MG""] call FNC_GearScript; [this, ""ACRE_PRC343"", 3] call FNC_SetRadio;}";
-						description="  Streltsy 1-3 / A Team / Machine Gunner";
+						description="  Streltsy 113 / A Team / Machine Gunner";
 						isPlayable=1;
 					};
 					id=1062;
@@ -14558,7 +14526,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={8758.6074,197.58072,11861.965};
-						angles[]={0.18067631,0.37655732,0.017332481};
+						angles[]={0.18067649,0.37655479,0.01733112};
 					};
 					side="East";
 					flags=4;
@@ -14566,7 +14534,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						init="call{[this, ""VDV_TL""] call FNC_GearScript; [this, ""ACRE_PRC343"", 3] call FNC_SetRadio;}";
-						description="Streltsy 1-3 / B Team / Team Leader";
+						description="Streltsy 113 / B Team / Team Leader";
 						isPlayable=1;
 					};
 					id=1063;
@@ -14658,14 +14626,14 @@ class Mission
 					class PositionInfo
 					{
 						position[]={8758.957,197.78346,11860.888};
-						angles[]={0.18067631,0.37655732,0.017332481};
+						angles[]={0.18067649,0.37655479,0.01733112};
 					};
 					side="East";
 					flags=4;
 					class Attributes
 					{
 						init="call{[this, ""VDV_ARPG""] call FNC_GearScript; [this, ""ACRE_PRC343"", 3] call FNC_SetRadio;}";
-						description="  Streltsy 1-3 / B Team / RPG Assistant";
+						description="  Streltsy 113 / B Team / RPG Assistant";
 						isPlayable=1;
 					};
 					id=1064;
@@ -14757,14 +14725,14 @@ class Mission
 					class PositionInfo
 					{
 						position[]={8758.5459,198.01213,11859.598};
-						angles[]={0.18067631,0.37655732,0.017332481};
+						angles[]={0.18067649,0.37655479,0.01733112};
 					};
 					side="East";
 					flags=4;
 					class Attributes
 					{
 						init="call{[this, ""VDV_RPG""] call FNC_GearScript; [this, ""ACRE_PRC343"", 3] call FNC_SetRadio;}";
-						description="  Streltsy 1-3 / B Team / RPG Gunner";
+						description="  Streltsy 113 / B Team / RPG Gunner";
 						isPlayable=1;
 					};
 					id=1065;
@@ -14856,7 +14824,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={8760.1289,197.97296,11859.951};
-						angles[]={0.18067597,0.37655732,0.0026520467};
+						angles[]={0.18067649,0.37655479,0.0026529003};
 					};
 					side="East";
 					flags=4;
@@ -14864,7 +14832,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						init="call{[this, ""VDV_CREW""] call FNC_GearScript; [this, ""ACRE_PRC343"", 3] call FNC_SetRadio;}";
-						description="Streltsy 1-3 / C Team / BMD-1 Gunner";
+						description="Streltsy 113 / C Team / BMD-1 Gunner";
 						isPlayable=1;
 					};
 					id=1071;
@@ -14956,14 +14924,14 @@ class Mission
 					class PositionInfo
 					{
 						position[]={8759.8115,198.14128,11859.011};
-						angles[]={0.18067631,0.37655732,0.017332481};
+						angles[]={0.18067649,0.37655479,0.01733112};
 					};
 					side="East";
 					flags=4;
 					class Attributes
 					{
 						init="call{[this, ""VDV_CREW""] call FNC_GearScript; [this, ""ACRE_PRC343"", 3] call FNC_SetRadio;}";
-						description="Streltsy 1-3 / C Team / BMD-1 Driver";
+						description="Streltsy 113 / C Team / BMD-1 Driver";
 						isPlayable=1;
 					};
 					id=1073;
@@ -15071,7 +15039,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="Streltsy 1-3";
+							value="Streltsy 113";
 						};
 					};
 				};
@@ -15109,8 +15077,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8780.6406,193.0218,11923.913};
-						angles[]={0,0.41819832,0};
+						position[]={8780.6406,193.02148,11923.913};
+						angles[]={0,0.41819835,0};
 					};
 					side="East";
 					flags=2;
@@ -15118,12 +15086,12 @@ class Mission
 					{
 						rank="LIEUTENANT";
 						init="call{[this, ""VDV_PL""] call FNC_GearScript; [this, ""ACRE_PRC343"", 4] call FNC_SetRadio; [this, ""ACRE_PRC148"", 2, ""LEFT""] call FNC_SetRadio;}";
-						description="Streltsy 2-0 / Platoon Leader @Streltsy 2-0";
+						description="Streltsy 114'A / Platoon Leader @Streltsy 114'A";
 						isPlayable=1;
 					};
 					id=1075;
 					type="rhs_vdv_flora_officer_armored";
-					atlOffset=0.41329956;
+					atlOffset=0.41297913;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -15210,20 +15178,20 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8780.0625,193.12642,11922.466};
-						angles[]={0,0.41819832,0};
+						position[]={8780.0635,193.12608,11922.466};
+						angles[]={0,0.41819835,0};
 					};
 					side="East";
 					class Attributes
 					{
 						rank="SERGEANT";
 						init="call{[this, ""VDV_PL""] call FNC_GearScript; [this, ""ACRE_PRC343"", 4] call FNC_SetRadio; [this, ""ACRE_PRC148"", 2, ""LEFT""] call FNC_SetRadio;}";
-						description="Streltsy 2-0 / Platoon Sergeant";
+						description="Streltsy 114'A / Platoon Sergeant";
 						isPlayable=1;
 					};
 					id=1076;
 					type="rhs_vdv_flora_sergeant";
-					atlOffset=0.41329956;
+					atlOffset=0.41297913;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -15310,7 +15278,7 @@ class Mission
 			{
 			};
 			id=1074;
-			atlOffset=0.41329956;
+			atlOffset=0.41297913;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -15328,7 +15296,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="Streltsy 2-0";
+							value="Streltsy 114'A";
 						};
 					};
 				};
@@ -15366,8 +15334,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8832.5283,192.60568,11935.235};
-						angles[]={0,0.17618887,0};
+						position[]={8832.5283,192.60539,11935.235};
+						angles[]={0,0.17619099,0};
 					};
 					side="East";
 					flags=2;
@@ -15375,12 +15343,12 @@ class Mission
 					{
 						rank="SERGEANT";
 						init="call{[this, ""VDV_SL""] call FNC_GearScript; [this, ""ACRE_PRC343"", 4] call FNC_SetRadio; [this, ""ACRE_PRC148"", 2, ""LEFT""] call FNC_SetRadio;}";
-						description="Streltsy 2-1 / A Team / Section Leader @Streltsy 2-1";
+						description="Streltsy 114 / A Team / Section Leader @Streltsy 114";
 						isPlayable=1;
 					};
 					id=1079;
 					type="rhs_vdv_flora_sergeant";
-					atlOffset=0.44430542;
+					atlOffset=0.4440155;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -15467,19 +15435,19 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8832.2607,192.71101,11933.23};
-						angles[]={0,0.17618887,0};
+						position[]={8832.2607,192.71075,11933.229};
+						angles[]={0,0.17619099,0};
 					};
 					side="East";
 					class Attributes
 					{
 						init="call{[this, ""VDV_MG""] call FNC_GearScript; [this, ""ACRE_PRC343"", 4] call FNC_SetRadio;}";
-						description="  Streltsy 2-1 / A Team / Machine Gunner";
+						description="  Streltsy 114 / A Team / Machine Gunner";
 						isPlayable=1;
 					};
 					id=1080;
 					type="rhs_vdv_flora_machinegunner";
-					atlOffset=0.41331482;
+					atlOffset=0.41293335;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -15566,19 +15534,19 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8831.9316,192.81168,11931.774};
-						angles[]={0,0.17618887,0};
+						position[]={8831.9316,192.81136,11931.774};
+						angles[]={0,0.17619099,0};
 					};
 					side="East";
 					class Attributes
 					{
 						init="call{[this, ""VDV_AMG""] call FNC_GearScript; [this, ""ACRE_PRC343"", 4] call FNC_SetRadio;}";
-						description="  Streltsy 2-1 / A Team / Assistant Machine Gunner";
+						description="  Streltsy 114 / A Team / Assistant Machine Gunner";
 						isPlayable=1;
 					};
 					id=1245;
 					type="rhs_vdv_flora_LAT";
-					atlOffset=0.41331482;
+					atlOffset=0.41299438;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -15665,20 +15633,20 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8834.7715,192.63306,11934.726};
-						angles[]={0,0.17618887,0};
+						position[]={8834.7715,192.63274,11934.726};
+						angles[]={0,0.17619099,0};
 					};
 					side="East";
 					class Attributes
 					{
 						rank="CORPORAL";
 						init="call{[this, ""VDV_TL""] call FNC_GearScript; [this, ""ACRE_PRC343"", 4] call FNC_SetRadio;}";
-						description="Streltsy 2-1 / B Team / Team Leader";
+						description="Streltsy 114 / B Team / Team Leader";
 						isPlayable=1;
 					};
 					id=1081;
 					type="rhs_vdv_flora_junior_sergeant";
-					atlOffset=0.41333008;
+					atlOffset=0.41300964;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -15765,19 +15733,19 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8835.3291,192.71675,11933.74};
-						angles[]={0,0.17618887,0};
+						position[]={8835.3291,192.71649,11933.74};
+						angles[]={0,0.17619099,0};
 					};
 					side="East";
 					class Attributes
 					{
 						init="call{[this, ""VDV_ARPG""] call FNC_GearScript; [this, ""ACRE_PRC343"", 4] call FNC_SetRadio;}";
-						description="  Streltsy 2-1 / B Team / RPG Assistant";
+						description="  Streltsy 114 / B Team / RPG Assistant";
 						isPlayable=1;
 					};
 					id=1082;
 					type="rhs_vdv_flora_rifleman";
-					atlOffset=0.41825867;
+					atlOffset=0.41799927;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -15864,19 +15832,19 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8835.1826,192.80937,11932.395};
-						angles[]={0,0.17618887,0};
+						position[]={8835.1826,192.80905,11932.395};
+						angles[]={0,0.17619099,0};
 					};
 					side="East";
 					class Attributes
 					{
 						init="call{[this, ""VDV_RPG""] call FNC_GearScript; [this, ""ACRE_PRC343"", 4] call FNC_SetRadio;}";
-						description="  Streltsy 2-1 / B Team / RPG Gunner";
+						description="  Streltsy 114 / B Team / RPG Gunner";
 						isPlayable=1;
 					};
 					id=1083;
 					type="rhs_vdv_flora_at";
-					atlOffset=0.41331482;
+					atlOffset=0.41299438;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -15963,19 +15931,19 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8834.9844,192.94012,11930.601};
-						angles[]={0,0.17618887,0};
+						position[]={8834.9844,192.93968,11930.601};
+						angles[]={0,0.17619099,0};
 					};
 					side="East";
 					class Attributes
 					{
 						init="call{[this, ""VDV_RF""] call FNC_GearScript; [this, ""ACRE_PRC343"", 4] call FNC_SetRadio;}";
-						description="  Streltsy 2-1 / B Team / Rifleman";
+						description="  Streltsy 114 / B Team / Rifleman";
 						isPlayable=1;
 					};
 					id=1252;
 					type="rhs_vdv_flora_RShG2";
-					atlOffset=0.41343689;
+					atlOffset=0.41299438;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -16062,7 +16030,7 @@ class Mission
 			{
 			};
 			id=1078;
-			atlOffset=0.44430542;
+			atlOffset=0.4440155;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -16080,7 +16048,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="Streltsy 2-1";
+							value="Streltsy 114";
 						};
 					};
 				};
@@ -16118,8 +16086,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8759.998,189.36034,11971.203};
-						angles[]={0,0.47953412,0};
+						position[]={8759.998,189.36006,11971.203};
+						angles[]={0,0.4795292,0};
 					};
 					side="East";
 					flags=2;
@@ -16127,12 +16095,12 @@ class Mission
 					{
 						rank="SERGEANT";
 						init="call{[this, ""VDV_SL""] call FNC_GearScript; [this, ""ACRE_PRC343"", 5] call FNC_SetRadio; [this, ""ACRE_PRC148"", 2, ""LEFT""] call FNC_SetRadio;}";
-						description="Streltsy 2-2 / A Team / Section Leader @Streltsy 2-2";
+						description="Streltsy 115 / A Team / Section Leader @Streltsy 115";
 						isPlayable=1;
 					};
 					id=1089;
 					type="rhs_vdv_flora_sergeant";
-					atlOffset=0.46427917;
+					atlOffset=0.46400452;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -16219,19 +16187,19 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8759.1426,189.48351,11969.368};
-						angles[]={0,0.47953412,0};
+						position[]={8759.1426,189.48318,11969.368};
+						angles[]={0,0.4795292,0};
 					};
 					side="East";
 					class Attributes
 					{
 						init="call{[this, ""VDV_MG""] call FNC_GearScript; [this, ""ACRE_PRC343"", 5] call FNC_SetRadio;}";
-						description="  Streltsy 2-2 / A Team / Machine Gunner";
+						description="  Streltsy 115 / A Team / Machine Gunner";
 						isPlayable=1;
 					};
 					id=1090;
 					type="rhs_vdv_flora_machinegunner";
-					atlOffset=0.41329956;
+					atlOffset=0.41297913;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -16318,19 +16286,19 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8757.9727,189.6246,11967.795};
-						angles[]={0,0.47953412,0};
+						position[]={8757.9727,189.62428,11967.795};
+						angles[]={0,0.4795292,0};
 					};
 					side="East";
 					class Attributes
 					{
 						init="call{[this, ""VDV_AMG""] call FNC_GearScript; [this, ""ACRE_PRC343"", 5] call FNC_SetRadio;}";
-						description="  Streltsy 2-2 / A Team / Assistant Machine Gunner";
+						description="  Streltsy 115 / A Team / Assistant Machine Gunner";
 						isPlayable=1;
 					};
 					id=1247;
 					type="rhs_vdv_flora_LAT";
-					atlOffset=0.41329956;
+					atlOffset=0.41297913;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -16417,20 +16385,20 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8761.9863,189.44891,11970.046};
-						angles[]={0,0.47953412,0};
+						position[]={8761.9863,189.44859,11970.046};
+						angles[]={0,0.4795292,0};
 					};
 					side="East";
 					class Attributes
 					{
 						rank="CORPORAL";
 						init="call{[this, ""VDV_TL""] call FNC_GearScript; [this, ""ACRE_PRC343"", 5] call FNC_SetRadio;}";
-						description="Streltsy 2-2 / B Team / Team Leader";
+						description="Streltsy 115 / B Team / Team Leader";
 						isPlayable=1;
 					};
 					id=1091;
 					type="rhs_vdv_flora_junior_sergeant";
-					atlOffset=0.41331482;
+					atlOffset=0.41299438;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -16517,19 +16485,19 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8762.2236,189.5701,11968.938};
-						angles[]={0,0.47953412,0};
+						position[]={8762.2236,189.56985,11968.938};
+						angles[]={0,0.4795292,0};
 					};
 					side="East";
 					class Attributes
 					{
 						init="call{[this, ""VDV_ARPG""] call FNC_GearScript; [this, ""ACRE_PRC343"", 5] call FNC_SetRadio;}";
-						description="  Streltsy 2-2 / B Team / RPG Assistant";
+						description="  Streltsy 115 / B Team / RPG Assistant";
 						isPlayable=1;
 					};
 					id=1092;
 					type="rhs_vdv_flora_rifleman";
-					atlOffset=0.43424988;
+					atlOffset=0.43400574;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -16616,19 +16584,19 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8761.6816,189.6562,11967.699};
-						angles[]={0,0.47953412,0};
+						position[]={8761.6816,189.65588,11967.699};
+						angles[]={0,0.4795292,0};
 					};
 					side="East";
 					class Attributes
 					{
 						init="call{[this, ""VDV_RPG""] call FNC_GearScript; [this, ""ACRE_PRC343"", 5] call FNC_SetRadio;}";
-						description="  Streltsy 2-2 / B Team / RPG Gunner";
+						description="  Streltsy 115 / B Team / RPG Gunner";
 						isPlayable=1;
 					};
 					id=1093;
 					type="rhs_vdv_flora_at";
-					atlOffset=0.41331482;
+					atlOffset=0.41299438;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -16715,19 +16683,19 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8760.5879,189.83864,11965.73};
-						angles[]={0,0.47953412,0};
+						position[]={8760.5879,189.83847,11965.729};
+						angles[]={0,0.4795292,0};
 					};
 					side="East";
 					class Attributes
 					{
 						init="call{[this, ""VDV_RF""] call FNC_GearScript; [this, ""ACRE_PRC343"", 5] call FNC_SetRadio;}";
-						description="  Streltsy 2-2 / B Team / Rifleman";
+						description="  Streltsy 115 / B Team / Rifleman";
 						isPlayable=1;
 					};
 					id=1254;
 					type="rhs_vdv_flora_RShG2";
-					atlOffset=0.41523743;
+					atlOffset=0.41490173;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -16814,7 +16782,7 @@ class Mission
 			{
 			};
 			id=1088;
-			atlOffset=0.46427917;
+			atlOffset=0.46400452;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -16832,7 +16800,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="Streltsy 2-2";
+							value="Streltsy 115";
 						};
 					};
 				};
@@ -16870,8 +16838,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8795.1699,191.25108,11951.222};
-						angles[]={0,0.34509301,0};
+						position[]={8795.1699,191.25078,11951.222};
+						angles[]={0,0.34508649,0};
 					};
 					side="East";
 					flags=2;
@@ -16879,12 +16847,12 @@ class Mission
 					{
 						rank="SERGEANT";
 						init="call{[this, ""VDV_SL""] call FNC_GearScript; [this, ""ACRE_PRC343"", 6] call FNC_SetRadio; [this, ""ACRE_PRC148"", 2, ""LEFT""] call FNC_SetRadio;}";
-						description="Streltsy 2-3 / A Team / Section Leader @Streltsy 2-3";
+						description="Streltsy 116 / A Team / Section Leader @Streltsy 116";
 						isPlayable=1;
 					};
 					id=1099;
 					type="rhs_vdv_flora_sergeant";
-					atlOffset=0.42529297;
+					atlOffset=0.42498779;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -16971,19 +16939,19 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8794.5684,191.35779,11949.289};
-						angles[]={0,0.34509301,0};
+						position[]={8794.5684,191.35747,11949.289};
+						angles[]={0,0.34508649,0};
 					};
 					side="East";
 					class Attributes
 					{
 						init="call{[this, ""VDV_MG""] call FNC_GearScript; [this, ""ACRE_PRC343"", 6] call FNC_SetRadio;}";
-						description="  Streltsy 2-3 / A Team / Machine Gunner";
+						description="  Streltsy 116 / A Team / Machine Gunner";
 						isPlayable=1;
 					};
 					id=1100;
 					type="rhs_vdv_flora_machinegunner";
-					atlOffset=0.41331482;
+					atlOffset=0.41299438;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -17070,19 +17038,19 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8794.3242,191.46989,11947.516};
-						angles[]={0,0.34509301,0};
+						position[]={8794.3242,191.46957,11947.516};
+						angles[]={0,0.34508649,0};
 					};
 					side="East";
 					class Attributes
 					{
 						init="call{[this, ""VDV_AMG""] call FNC_GearScript; [this, ""ACRE_PRC343"", 6] call FNC_SetRadio;}";
-						description="  Streltsy 2-3 / A Team / Assistant Machine Gunner";
+						description="  Streltsy 116 / A Team / Assistant Machine Gunner";
 						isPlayable=1;
 					};
 					id=1249;
 					type="rhs_vdv_flora_LAT";
-					atlOffset=0.41331482;
+					atlOffset=0.41299438;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -17169,20 +17137,20 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8797.2949,191.3084,11950.342};
-						angles[]={0,0.34509301,0};
+						position[]={8797.2949,191.30807,11950.342};
+						angles[]={0,0.34508649,0};
 					};
 					side="East";
 					class Attributes
 					{
 						rank="CORPORAL";
 						init="call{[this, ""VDV_TL""] call FNC_GearScript; [this, ""ACRE_PRC343"", 6] call FNC_SetRadio;}";
-						description="Streltsy 2-3 / B Team / Team Leader";
+						description="Streltsy 116 / B Team / Team Leader";
 						isPlayable=1;
 					};
 					id=1101;
 					type="rhs_vdv_flora_junior_sergeant";
-					atlOffset=0.41329956;
+					atlOffset=0.41297913;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -17269,19 +17237,19 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8797.6787,191.37746,11949.276};
-						angles[]={0,0.34509301,0};
+						position[]={8797.6787,191.37714,11949.276};
+						angles[]={0,0.34508649,0};
 					};
 					side="East";
 					class Attributes
 					{
 						init="call{[this, ""VDV_ARPG""] call FNC_GearScript; [this, ""ACRE_PRC343"", 6] call FNC_SetRadio;}";
-						description="  Streltsy 2-3 / B Team / RPG Assistant";
+						description="  Streltsy 116 / B Team / RPG Assistant";
 						isPlayable=1;
 					};
 					id=1102;
 					type="rhs_vdv_flora_rifleman";
-					atlOffset=0.41331482;
+					atlOffset=0.41299438;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -17368,19 +17336,19 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8797.3086,191.45682,11947.976};
-						angles[]={0,0.34509301,0};
+						position[]={8797.3086,191.45641,11947.976};
+						angles[]={0,0.34508649,0};
 					};
 					side="East";
 					class Attributes
 					{
 						init="call{[this, ""VDV_RPG""] call FNC_GearScript; [this, ""ACRE_PRC343"", 6] call FNC_SetRadio;}";
-						description="  Streltsy 2-3 / B Team / RPG Gunner";
+						description="  Streltsy 116 / B Team / RPG Gunner";
 						isPlayable=1;
 					};
 					id=1103;
 					type="rhs_vdv_flora_at";
-					atlOffset=0.41339111;
+					atlOffset=0.41297913;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -17467,19 +17435,19 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8796.9512,191.53871,11946.622};
-						angles[]={0,0.34509301,0};
+						position[]={8796.9512,191.53839,11946.622};
+						angles[]={0,0.34508649,0};
 					};
 					side="East";
 					class Attributes
 					{
 						init="call{[this, ""VDV_RF""] call FNC_GearScript; [this, ""ACRE_PRC343"", 6] call FNC_SetRadio;}";
-						description="  Streltsy 2-3 / B Team / Rifleman";
+						description="  Streltsy 116 / B Team / Rifleman";
 						isPlayable=1;
 					};
 					id=1256;
 					type="rhs_vdv_flora_RShG2";
-					atlOffset=0.41331482;
+					atlOffset=0.41299438;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -17566,7 +17534,7 @@ class Mission
 			{
 			};
 			id=1098;
-			atlOffset=0.42529297;
+			atlOffset=0.42498779;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -17584,7 +17552,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="Streltsy 2-3";
+							value="Streltsy 116";
 						};
 					};
 				};
@@ -17622,8 +17590,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8618.0225,179.41432,12010.099};
-						angles[]={0,0.56117469,0};
+						position[]={8618.0225,179.41405,12010.099};
+						angles[]={0,0.5611757,0};
 					};
 					side="East";
 					flags=2;
@@ -17631,12 +17599,12 @@ class Mission
 					{
 						rank="LIEUTENANT";
 						init="call{[this, ""VDV_PL""] call FNC_GearScript; [this, ""ACRE_PRC343"", 7] call FNC_SetRadio; [this, ""ACRE_PRC148"", 3, ""LEFT""] call FNC_SetRadio;}";
-						description="Streltsy 3-0 / Platoon Leader @Streltsy 3-0";
+						description="Streltsy 117'A / Platoon Leader @Streltsy 117'A";
 						isPlayable=1;
 					};
 					id=1113;
 					type="rhs_vdv_flora_officer_armored";
-					atlOffset=0.41326904;
+					atlOffset=0.41299438;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -17723,20 +17691,20 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8617.2451,179.43089,12008.747};
-						angles[]={0,0.56117469,0};
+						position[]={8617.2451,179.43062,12008.747};
+						angles[]={0,0.5611757,0};
 					};
 					side="East";
 					class Attributes
 					{
 						rank="SERGEANT";
 						init="call{[this, ""VDV_PL""] call FNC_GearScript; [this, ""ACRE_PRC343"", 7] call FNC_SetRadio; [this, ""ACRE_PRC148"", 3, ""LEFT""] call FNC_SetRadio;}";
-						description="Streltsy 3-0 / Platoon Sergeant";
+						description="Streltsy 117 / Platoon Sergeant";
 						isPlayable=1;
 					};
 					id=1114;
 					type="rhs_vdv_flora_sergeant";
-					atlOffset=0.41326904;
+					atlOffset=0.41299438;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -17823,7 +17791,7 @@ class Mission
 			{
 			};
 			id=1112;
-			atlOffset=0.41326904;
+			atlOffset=0.41299438;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -17841,7 +17809,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="Streltsy 3-0";
+							value="Streltsy 117'A";
 						};
 					};
 				};
@@ -17879,8 +17847,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8582.3223,175.25479,12043.61};
-						angles[]={0,0.76986974,0};
+						position[]={8582.3223,175.25449,12043.61};
+						angles[]={0,0.76986474,0};
 					};
 					side="East";
 					flags=2;
@@ -17888,12 +17856,12 @@ class Mission
 					{
 						rank="SERGEANT";
 						init="call{[this, ""VDV_SL""] call FNC_GearScript; [this, ""ACRE_PRC343"", 7] call FNC_SetRadio; [this, ""ACRE_PRC148"", 3, ""LEFT""] call FNC_SetRadio;}";
-						description="Streltsy 3-1 / A Team / Section Leader @Streltsy 3-1";
+						description="Streltsy 117 / A Team / Section Leader @Streltsy 117";
 						isPlayable=1;
 					};
 					id=1117;
 					type="rhs_vdv_flora_sergeant";
-					atlOffset=0.41329956;
+					atlOffset=0.41299438;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -17980,19 +17948,19 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8580.9785,175.2202,12042.097};
-						angles[]={0,0.76986974,0};
+						position[]={8580.9785,175.21989,12042.097};
+						angles[]={0,0.76986474,0};
 					};
 					side="East";
 					class Attributes
 					{
 						init="call{[this, ""VDV_MG""] call FNC_GearScript; [this, ""ACRE_PRC343"", 7] call FNC_SetRadio;}";
-						description="  Streltsy 3-1 / A Team / Machine Gunner";
+						description="  Streltsy 117 / A Team / Machine Gunner";
 						isPlayable=1;
 					};
 					id=1118;
 					type="rhs_vdv_flora_machinegunner";
-					atlOffset=0.41329956;
+					atlOffset=0.41299438;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -18079,20 +18047,20 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8583.8965,175.42708,12041.933};
-						angles[]={0,0.76986974,0};
+						position[]={8583.8965,175.42677,12041.933};
+						angles[]={0,0.76986474,0};
 					};
 					side="East";
 					class Attributes
 					{
 						rank="CORPORAL";
 						init="call{[this, ""VDV_TL""] call FNC_GearScript; [this, ""ACRE_PRC343"", 7] call FNC_SetRadio;}";
-						description="Streltsy 3-1 / B Team / Team Leader";
+						description="Streltsy 117 / B Team / Team Leader";
 						isPlayable=1;
 					};
 					id=1119;
 					type="rhs_vdv_flora_junior_sergeant";
-					atlOffset=0.41329956;
+					atlOffset=0.41299438;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -18179,19 +18147,19 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8583.8057,175.46652,12040.804};
-						angles[]={0,0.76986974,0};
+						position[]={8583.8057,175.46622,12040.804};
+						angles[]={0,0.76986474,0};
 					};
 					side="East";
 					class Attributes
 					{
 						init="call{[this, ""VDV_ARPG""] call FNC_GearScript; [this, ""ACRE_PRC343"", 7] call FNC_SetRadio;}";
-						description="  Streltsy 3-1 / B Team / RPG Assistant";
+						description="  Streltsy 117 / B Team / RPG Assistant";
 						isPlayable=1;
 					};
 					id=1120;
 					type="rhs_vdv_flora_rifleman";
-					atlOffset=0.41329956;
+					atlOffset=0.41299438;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -18278,19 +18246,19 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8582.9336,175.44212,12039.771};
-						angles[]={0,0.76986974,0};
+						position[]={8582.9336,175.44179,12039.771};
+						angles[]={0,0.76986474,0};
 					};
 					side="East";
 					class Attributes
 					{
 						init="call{[this, ""VDV_RPG""] call FNC_GearScript; [this, ""ACRE_PRC343"", 7] call FNC_SetRadio;}";
-						description="  Streltsy 3-1 / B Team / RPG Gunner";
+						description="  Streltsy 117 / B Team / RPG Gunner";
 						isPlayable=1;
 					};
 					id=1121;
 					type="rhs_vdv_flora_at";
-					atlOffset=0.41329956;
+					atlOffset=0.41299438;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -18377,7 +18345,7 @@ class Mission
 			{
 			};
 			id=1116;
-			atlOffset=0.41329956;
+			atlOffset=0.41299438;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -18395,7 +18363,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="Streltsy 3-1";
+							value="Streltsy 117";
 						};
 					};
 				};
@@ -18433,8 +18401,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8624.7705,177.94449,12036.138};
-						angles[]={0,0.54227632,0};
+						position[]={8624.7695,177.94417,12036.138};
+						angles[]={0,0.54227376,0};
 					};
 					side="East";
 					flags=2;
@@ -18442,12 +18410,12 @@ class Mission
 					{
 						rank="SERGEANT";
 						init="call{[this, ""VDV_SL""] call FNC_GearScript; [this, ""ACRE_PRC343"", 8] call FNC_SetRadio; [this, ""ACRE_PRC148"", 3, ""LEFT""] call FNC_SetRadio;}";
-						description="Streltsy 3-2 / A Team / Section Leader @Streltsy 3-2";
+						description="Streltsy 118 / A Team / Section Leader @Streltsy 118";
 						isPlayable=1;
 					};
 					id=1127;
 					type="rhs_vdv_flora_sergeant";
-					atlOffset=0.41326904;
+					atlOffset=0.41299438;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -18534,19 +18502,19 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8623.8018,178.05093,12034.36};
-						angles[]={0,0.54227632,0};
+						position[]={8623.8018,178.05066,12034.36};
+						angles[]={0,0.54227376,0};
 					};
 					side="East";
 					class Attributes
 					{
 						init="call{[this, ""VDV_MG""] call FNC_GearScript; [this, ""ACRE_PRC343"", 8] call FNC_SetRadio;}";
-						description="  Streltsy 3-2 / A Team / Machine Gunner";
+						description="  Streltsy 118 / A Team / Machine Gunner";
 						isPlayable=1;
 					};
 					id=1128;
 					type="rhs_vdv_flora_machinegunner";
-					atlOffset=0.41326904;
+					atlOffset=0.41299438;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -18633,20 +18601,20 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8626.6816,178.15849,12034.858};
-						angles[]={0,0.54227632,0};
+						position[]={8626.6816,178.15822,12034.858};
+						angles[]={0,0.54227376,0};
 					};
 					side="East";
 					class Attributes
 					{
 						rank="CORPORAL";
 						init="call{[this, ""VDV_TL""] call FNC_GearScript; [this, ""ACRE_PRC343"", 8] call FNC_SetRadio;}";
-						description="Streltsy 3-2 / B Team / Team Leader";
+						description="Streltsy 118 / B Team / Team Leader";
 						isPlayable=1;
 					};
 					id=1129;
 					type="rhs_vdv_flora_junior_sergeant";
-					atlOffset=0.41326904;
+					atlOffset=0.41299438;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -18733,19 +18701,19 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8626.8486,178.26334,12033.739};
-						angles[]={0,0.54227632,0};
+						position[]={8626.8486,178.26306,12033.739};
+						angles[]={0,0.54227376,0};
 					};
 					side="East";
 					class Attributes
 					{
 						init="call{[this, ""VDV_ARPG""] call FNC_GearScript; [this, ""ACRE_PRC343"", 8] call FNC_SetRadio;}";
-						description="  Streltsy 3-2 / B Team / RPG Assistant";
+						description="  Streltsy 118 / B Team / RPG Assistant";
 						isPlayable=1;
 					};
 					id=1130;
 					type="rhs_vdv_flora_rifleman";
-					atlOffset=0.41326904;
+					atlOffset=0.41299438;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -18832,19 +18800,19 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8626.2314,178.3316,12032.535};
-						angles[]={0,0.54227632,0};
+						position[]={8626.2314,178.33133,12032.535};
+						angles[]={0,0.54227376,0};
 					};
 					side="East";
 					class Attributes
 					{
 						init="call{[this, ""VDV_RPG""] call FNC_GearScript; [this, ""ACRE_PRC343"", 8] call FNC_SetRadio;}";
-						description="  Streltsy 3-2 / B Team / RPG Gunner";
+						description="  Streltsy 118 / B Team / RPG Gunner";
 						isPlayable=1;
 					};
 					id=1131;
 					type="rhs_vdv_flora_at";
-					atlOffset=0.41326904;
+					atlOffset=0.41299438;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -18931,7 +18899,7 @@ class Mission
 			{
 			};
 			id=1126;
-			atlOffset=0.41326904;
+			atlOffset=0.41299438;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -18949,7 +18917,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="Streltsy 3-2";
+							value="Streltsy 118";
 						};
 					};
 				};
@@ -18987,8 +18955,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8672.1982,180.92606,12025.766};
-						angles[]={0,0.68295753,0};
+						position[]={8672.1982,180.92578,12025.766};
+						angles[]={0,0.6829648,0};
 					};
 					side="East";
 					flags=2;
@@ -18996,12 +18964,12 @@ class Mission
 					{
 						rank="SERGEANT";
 						init="call{[this, ""VDV_SL""] call FNC_GearScript; [this, ""ACRE_PRC343"", 9] call FNC_SetRadio; [this, ""ACRE_PRC148"", 3, ""LEFT""] call FNC_SetRadio;}";
-						description="Streltsy 3-3 / A Team / Section Leader @Streltsy 3-3";
+						description="Streltsy 119 / A Team / Section Leader @Streltsy 119";
 						isPlayable=1;
 					};
 					id=1137;
 					type="rhs_vdv_flora_sergeant";
-					atlOffset=0.41326904;
+					atlOffset=0.41299438;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -19088,19 +19056,19 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8670.9912,181.07425,12024.141};
-						angles[]={0,0.68295753,0};
+						position[]={8670.9912,181.07407,12024.14};
+						angles[]={0,0.6829648,0};
 					};
 					side="East";
 					class Attributes
 					{
 						init="call{[this, ""VDV_MG""] call FNC_GearScript; [this, ""ACRE_PRC343"", 9] call FNC_SetRadio;}";
-						description="  Streltsy 3-3 / A Team / Machine Gunner";
+						description="  Streltsy 119 / A Team / Machine Gunner";
 						isPlayable=1;
 					};
 					id=1138;
 					type="rhs_vdv_flora_machinegunner";
-					atlOffset=0.41326904;
+					atlOffset=0.41299438;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -19187,20 +19155,20 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8673.9111,181.14584,12024.231};
-						angles[]={0,0.68295753,0};
+						position[]={8673.9111,181.14557,12024.231};
+						angles[]={0,0.6829648,0};
 					};
 					side="East";
 					class Attributes
 					{
 						rank="CORPORAL";
 						init="call{[this, ""VDV_TL""] call FNC_GearScript; [this, ""ACRE_PRC343"", 9] call FNC_SetRadio;}";
-						description="Streltsy 3-3 / B Team / Team Leader";
+						description="Streltsy 119 / B Team / Team Leader";
 						isPlayable=1;
 					};
 					id=1139;
 					type="rhs_vdv_flora_junior_sergeant";
-					atlOffset=0.41326904;
+					atlOffset=0.41299438;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -19287,19 +19255,19 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8673.9189,181.27292,12023.099};
-						angles[]={0,0.68295753,0};
+						position[]={8673.9189,181.27264,12023.099};
+						angles[]={0,0.6829648,0};
 					};
 					side="East";
 					class Attributes
 					{
 						init="call{[this, ""VDV_ARPG""] call FNC_GearScript; [this, ""ACRE_PRC343"", 9] call FNC_SetRadio;}";
-						description="  Streltsy 3-3 / B Team / RPG Assistant";
+						description="  Streltsy 119 / B Team / RPG Assistant";
 						isPlayable=1;
 					};
 					id=1140;
 					type="rhs_vdv_flora_rifleman";
-					atlOffset=0.41326904;
+					atlOffset=0.41299438;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -19386,19 +19354,19 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8673.1406,181.37488,12021.993};
-						angles[]={0,0.68295753,0};
+						position[]={8673.1406,181.3746,12021.993};
+						angles[]={0,0.6829648,0};
 					};
 					side="East";
 					class Attributes
 					{
 						init="call{[this, ""VDV_RPG""] call FNC_GearScript; [this, ""ACRE_PRC343"", 9] call FNC_SetRadio;}";
-						description="  Streltsy 3-3 / B Team / RPG Gunner";
+						description="  Streltsy 119 / B Team / RPG Gunner";
 						isPlayable=1;
 					};
 					id=1141;
 					type="rhs_vdv_flora_at";
-					atlOffset=0.41325378;
+					atlOffset=0.41297913;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -19485,7 +19453,7 @@ class Mission
 			{
 			};
 			id=1136;
-			atlOffset=0.41326904;
+			atlOffset=0.41299438;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -19503,7 +19471,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="Streltsy 3-3";
+							value="Streltsy 119";
 						};
 					};
 				};
@@ -22617,7 +22585,7 @@ class Mission
 			};
 			id=1242;
 			type="rhs_bmd1p";
-			atlOffset=0.40744019;
+			atlOffset=0.39561462;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -24144,7 +24112,7 @@ class Mission
 			type="rectangle";
 			a=11.591;
 			b=429.55399;
-			angle=28.476982;
+			angle=28.476976;
 			id=1352;
 			atlOffset=34.751572;
 		};
@@ -27920,6 +27888,26 @@ class Mission
 				};
 				nAttributes=2;
 			};
+		};
+		class Item159
+		{
+			dataType="Marker";
+			position[]={11978.666,164.22241,12526.096};
+			name="blufor_marker_mk19";
+			text="mk19";
+			type="hd_dot";
+			id=1507;
+			atlOffset=-0.66387939;
+		};
+		class Item160
+		{
+			dataType="Marker";
+			position[]={11986.475,158.80901,12657.182};
+			name="blufor_marker_m2";
+			text="m2";
+			type="hd_dot";
+			id=1508;
+			atlOffset=-0.00042724609;
 		};
 	};
 };
