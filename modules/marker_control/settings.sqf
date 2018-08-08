@@ -8,10 +8,10 @@
 //ADDMARKER(west, "start");
 //ADDMARKER(SYSTEM, "objBravo");
 {
-	if (_x find "bluf_" != -1) then {
-  	ADDMARKER(west, _x, false);
+	if (_x find "bluf" == 0) then {
+  	ADDMARKER(west, _x);
   };
-  if (_x find "rus_" != -1) then {
-  	ADDMARKER(east, _x, false);
+  if (_x find "rus" == 0) then {
+  	ADDMARKER(east, _x);
   };
 } forEach allMapMarkers;

@@ -6,7 +6,7 @@
 //Enabled modules by default, disable them by adding // in front.
 
 #include "acre_setup\root.sqf"
-//#include "ai_drivers\root.sqf"
+#include "ai_drivers\root.sqf"
 //#include "anti_nd\root.sqf"
 #include "auto_track_assets\root.sqf"
 #include "disconnect_control\root.sqf"
