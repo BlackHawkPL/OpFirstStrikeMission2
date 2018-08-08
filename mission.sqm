@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=1509;
+		nextID=1510;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=208;
+		nextID=218;
 	};
 	class Camera
 	{
-		pos[]={12269.847,200.68135,12770.683};
-		dir[]={-0.66183066,-0.26749995,-0.70045286};
-		up[]={-0.18377045,0.96352571,-0.19449542};
-		aside[]={-0.72694069,3.0762749e-008,0.68685544};
+		pos[]={12203.959,163.29326,12598.024};
+		dir[]={-0.33686015,-0.93979007,0.05944477};
+		up[]={-0.92542493,0.34191319,0.16330652};
+		aside[]={0.17379871,-1.770939e-006,0.98489243};
 	};
 };
 binarizationWanted=0;
@@ -71,13 +71,14 @@ addons[]=
 	"ace_cargo",
 	"A3_Ui_F",
 	"RU_MKRDK",
-	"vk_mods_markers"
+	"vk_mods_markers",
+	"A3_Modules_F"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=39;
+		items=40;
 		class Item0
 		{
 			className="A3_Modules_F_Curator";
@@ -329,6 +330,13 @@ class AddonsMetaData
 			className="vk_mods_markers";
 			name="vk_mods_markers";
 		};
+		class Item39
+		{
+			className="A3_Modules_F";
+			name="Arma 3 Alpha - Scripted Modules";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
 	};
 };
 randomSeed=4628903;
@@ -363,7 +371,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=161;
+		items=162;
 		class Item0
 		{
 			dataType="Logic";
@@ -24112,7 +24120,7 @@ class Mission
 			type="rectangle";
 			a=11.591;
 			b=429.55399;
-			angle=28.476976;
+			angle=28.476973;
 			id=1352;
 			atlOffset=34.751572;
 		};
@@ -27908,6 +27916,18 @@ class Mission
 			type="hd_dot";
 			id=1508;
 			atlOffset=-0.00042724609;
+		};
+		class Item161
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={12203.18,159.903,12597.82};
+			};
+			name="fw_west_respawn";
+			id=1509;
+			type="Logic";
+			atlOffset=0.00047302246;
 		};
 	};
 };
