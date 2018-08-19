@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=218;
+		nextID=238;
 	};
 	class Camera
 	{
-		pos[]={12203.959,163.29326,12598.024};
-		dir[]={-0.33686015,-0.93979007,0.05944477};
-		up[]={-0.92542493,0.34191319,0.16330652};
-		aside[]={0.17379871,-1.770939e-006,0.98489243};
+		pos[]={12279.006,204.32179,12588.298};
+		dir[]={-0.91065437,-0.31806555,0.26415959};
+		up[]={-0.30555946,0.94802392,0.08863537};
+		aside[]={0.27862346,5.9022568e-008,0.96052587};
 	};
 };
 binarizationWanted=0;
@@ -639,7 +639,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={12227.519,160.22804,12561.576};
-						angles[]={0,5.0898514,0};
+						angles[]={-0,5.0898514,0};
 					};
 					side="Empty";
 					flags=4;
@@ -10266,8 +10266,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={12200.363,159.90396,12598.824};
-						angles[]={0,2.5539014,0};
+						position[]={12232.376,159.00143,12550.599};
+						angles[]={-0,2.5539014,0};
 					};
 					side="West";
 					flags=6;
@@ -10346,11 +10346,10 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={12201.818,159.90396,12597.604};
-						angles[]={0,2.8746428,0};
+						position[]={12217.332,159.49252,12544.307};
+						angles[]={6.2696404,2.8746428,6.2826972};
 					};
 					side="West";
-					flags=4;
 					class Attributes
 					{
 						rank="CORPORAL";
@@ -10359,6 +10358,7 @@ class Mission
 					};
 					id=981;
 					type="UK3CB_BAF_FT_MTP";
+					atlOffset=0.53433228;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -10426,8 +10426,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={12203.313,159.90396,12596.91};
-						angles[]={0,3.7060282,0};
+						position[]={12220.395,159.4778,12543.202};
+						angles[]={6.2696404,3.7060282,6.2826972};
 					};
 					side="West";
 					flags=4;
@@ -10505,8 +10505,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={12204.94,159.90396,12595.927};
-						angles[]={0,4.3389139,0};
+						position[]={12236.156,159.33583,12536.432};
+						angles[]={6.2549801,4.3389139,6.2825875};
 					};
 					side="West";
 					flags=4;
@@ -10584,8 +10584,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={12206.428,159.90396,12595.112};
-						angles[]={0,5.2671943,0};
+						position[]={12238.482,159.31627,12535.783};
+						angles[]={6.2549801,5.2671943,6.2825875};
 					};
 					side="West";
 					flags=4;
@@ -10663,8 +10663,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={12202.655,159.90396,12599.316};
-						angles[]={0,2.9778247,0};
+						position[]={12224.889,159.53748,12561.862};
+						angles[]={-0,2.9778247,6.2826972};
 					};
 					side="West";
 					flags=4;
@@ -10743,8 +10743,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={12204.418,159.90396,12598.416};
-						angles[]={0,3.65486,0};
+						position[]={12227.169,159.53601,12560.866};
+						angles[]={-0,3.65486,6.2826972};
 					};
 					side="West";
 					flags=4;
@@ -10822,8 +10822,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={12205.813,159.90396,12597.58};
-						angles[]={0,4.3061099,0};
+						position[]={12244.716,159.53659,12553.886};
+						angles[]={-0,4.3061099,6.2826972};
 					};
 					side="West";
 					flags=4;
@@ -10901,8 +10901,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={12207.118,159.90396,12597.039};
-						angles[]={0,4.3393307,0};
+						position[]={12247.149,159.53511,12553.231};
+						angles[]={-0,4.3393307,6.2826972};
 					};
 					side="West";
 					flags=4;
@@ -11212,7 +11212,7 @@ class Mission
 			};
 			id=1000;
 			type="rhs_bmd1p";
-			atlOffset=-0.0019378662;
+			atlOffset=-0.033874512;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -11538,7 +11538,7 @@ class Mission
 			};
 			id=1003;
 			type="rhs_bmd1p";
-			atlOffset=-0.001373291;
+			atlOffset=-0.033309937;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -20106,6 +20106,7 @@ class Mission
 				angles[]={0,4.1096044,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				init="call{[this, ""Mi-8MTV-3"", ""Russian Forces""] call FNC_TrackAsset; if (local this) then {this call compile preprocessFileLineNumbers ""customization\scripts\RUheli.sqf"";};}";
@@ -20114,7 +20115,7 @@ class Mission
 			};
 			id=1168;
 			type="RHS_Mi8MTV3_vdv";
-			atlOffset=0.2670002;
+			atlOffset=0.047025681;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -20167,6 +20168,7 @@ class Mission
 				angles[]={0,4.1096044,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				init="call{[this, ""Mi-8MTV-3"", ""Russian Forces""] call FNC_TrackAsset; if (local this) then {this call compile preprocessFileLineNumbers ""customization\scripts\RUheli.sqf"";};}";
@@ -20175,7 +20177,7 @@ class Mission
 			};
 			id=1171;
 			type="RHS_Mi8MTV3_vdv";
-			atlOffset=0.2670002;
+			atlOffset=0.047042847;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -22593,7 +22595,7 @@ class Mission
 			};
 			id=1242;
 			type="rhs_bmd1p";
-			atlOffset=0.39561462;
+			atlOffset=0.36366272;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -24120,7 +24122,7 @@ class Mission
 			type="rectangle";
 			a=11.591;
 			b=429.55399;
-			angle=28.476973;
+			angle=28.476969;
 			id=1352;
 			atlOffset=34.751572;
 		};
@@ -27221,7 +27223,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						init="call{[this, ""BAF_SL""] call FNC_GearScript; [this, ""ACRE_PRC343"", 2] call FNC_SetRadio; [this, ""ACRE_PRC148"", 1, ""LEFT""] call FNC_SetRadio;}";
-						description="3-2 Section / C Team / Section Leader @3-2 Section";
+						description="3-1 Section / C Team / Section Leader @3-1 Section";
 						isPlayable=1;
 					};
 					id=1489;
@@ -27301,7 +27303,7 @@ class Mission
 					class Attributes
 					{
 						init="call{[this, ""BAF_RAT""] call FNC_GearScript; [this, ""ACRE_PRC343"", 2] call FNC_SetRadio;}";
-						description="  3-2 Section / C Team / Rifleman AT";
+						description="  3-1 Section / C Team / Rifleman AT";
 						isPlayable=1;
 					};
 					id=1490;
@@ -27373,7 +27375,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={12086.591,158.80144,12666.925};
+						position[]={12086.59,158.80144,12666.925};
 						angles[]={0,5.2671943,0};
 					};
 					side="West";
@@ -27381,7 +27383,7 @@ class Mission
 					class Attributes
 					{
 						init="call{[this, ""BAF_AAR""] call FNC_GearScript; [this, ""ACRE_PRC343"", 2] call FNC_SetRadio;}";
-						description="  3-2 Section / C Team / Assistant Automatic Rifleman";
+						description="  3-1 Section / C Team / Assistant Automatic Rifleman";
 						isPlayable=1;
 					};
 					id=1491;
@@ -27461,7 +27463,7 @@ class Mission
 					class Attributes
 					{
 						init="call{[this, ""BAF_AR""] call FNC_GearScript; [this, ""ACRE_PRC343"", 2] call FNC_SetRadio;}";
-						description="  3-2 Section / C Team / Automatic Rifleman";
+						description="  3-1 Section / C Team / Automatic Rifleman";
 						isPlayable=1;
 					};
 					id=1492;
@@ -27542,7 +27544,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						init="call{[this, ""BAF_TL""] call FNC_GearScript; [this, ""ACRE_PRC343"", 2] call FNC_SetRadio;}";
-						description="3-2 Section / D Team / Team Leader";
+						description="3-1 Section / D Team / Team Leader";
 						isPlayable=1;
 					};
 					id=1493;
@@ -27622,7 +27624,7 @@ class Mission
 					class Attributes
 					{
 						init="call{[this, ""BAF_RAT""] call FNC_GearScript; [this, ""ACRE_PRC343"", 2] call FNC_SetRadio;}";
-						description="  3-2 Section / D Team / Rifleman AT";
+						description="  3-1 Section / D Team / Rifleman AT";
 						isPlayable=1;
 					};
 					id=1494;
@@ -27702,7 +27704,7 @@ class Mission
 					class Attributes
 					{
 						init="call{[this, ""BAF_AAR""] call FNC_GearScript; [this, ""ACRE_PRC343"", 2] call FNC_SetRadio;}";
-						description="  3-2 Section / D Team / Assistant Automatic Rifleman";
+						description="  3-1 Section / D Team / Assistant Automatic Rifleman";
 						isPlayable=1;
 					};
 					id=1495;
@@ -27782,7 +27784,7 @@ class Mission
 					class Attributes
 					{
 						init="call{[this, ""BAF_AR""] call FNC_GearScript; [this, ""ACRE_PRC343"", 2] call FNC_SetRadio;}";
-						description="  3-2 Section / D Team / Automatic Rifleman";
+						description="  3-1 Section / D Team / Automatic Rifleman";
 						isPlayable=1;
 					};
 					id=1496;
@@ -27922,12 +27924,11 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={12203.18,159.903,12597.82};
+				position[]={12231.378,159,12551.389};
 			};
 			name="fw_west_respawn";
 			id=1509;
 			type="Logic";
-			atlOffset=0.00047302246;
 		};
 	};
 };
