@@ -120,7 +120,6 @@ case (package + "MD"): {
 	["ACE_tourniquet", 5] call FNC_AddItem;
 	["ACE_salineIV_500", 1] call FNC_AddItem;
 	["ACE_surgicalKit", 1] call FNC_AddItem;
-	["ACE_personalAidKit", 3] call FNC_AddItem;
 
 };
 
