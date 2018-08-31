@@ -1,7 +1,7 @@
 private _target = _this select 0;
 private _isRefueling = _this select 3;
 
-private _speed = 0.05; //TODO: Set To 1
+private _speed = 1; //TODO: Set To 1
 if (!isNil "Rearm_speed") then {_speed = Rearm_speed};
 
 private _isBusy = _target getVariable ["busy", false];
@@ -44,21 +44,7 @@ else {
 
     private _aborted = false;
     
-    if (_target getVariable ["ammoLeft", 0] == 3 && !_aborted) then {
-        sleep (_speed * 20);
-        systemChat "Rearming FAB-250 HE Cluster";
-        sleep (_speed * 60);
-        if (_heli distance _target > 50) exitWith {
-            systemChat "Helicopter no longer present on pad, aborting";
-            _aborted = true;
-        };
-        //[_heli, ["rhs_mag_rbk250_ao1", [-1], 1]] remoteExec ["addMagazineTurret", _heli];
-        [_heli, ["rhs_weap_rbk250_ao1", [-1]]] remoteExec ["addWeaponTurret", _heli];
-        _target setVariable ["ammoLeft", 2, true];
-        systemChat "FAB-250 HE Cluster rearmed";
-    };
-    
-    if (_target getVariable ["ammoLeft", 0] == 2 && !_aborted) then {
+    if ((_target getVariable ["ammoLeft", 0]) == 2 && !_aborted) then {
         sleep (_speed * 20);
         systemChat "Rearming flares";
         sleep (_speed * 60);
@@ -71,7 +57,7 @@ else {
         systemChat "flares rearmed";
     };
     
-    if (_target getVariable ["ammoLeft", 0] == 1 && !_aborted) then {
+    if ((_target getVariable ["ammoLeft", 0]) == 1 && !_aborted) then {
         sleep (_speed * 20);
         systemChat "Rearming cannon CM";
         sleep (_speed * 60);
@@ -79,7 +65,7 @@ else {
             systemChat "Helicopter no longer present on pad, aborting";
             _aborted = true;
         };
-        [_heli, ["rhs_mag_upk23_ofzt", [0], 75]] remoteExec ["addMagazineTurret", _heli];
+        [_heli, ["rhs_mag_upk23_ofzt", [-1], 80]] remoteExec ["addMagazineTurret", _heli];
         _target setVariable ["ammoLeft", 0, true];
         systemChat "Cannon CM rearmed";
     };
