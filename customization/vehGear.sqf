@@ -102,7 +102,7 @@ switch (_type) do {
 		_vehicle addMagazineCargoGlobal ["SmokeShell", 2];
 		_vehicle addMagazineCargoGlobal ["HandGrenade", 2];
 		_vehicle addMagazineCargoGlobal ["ClaymoreDirectionalMine_Remote_Mag", 3];
-		_vehicle addMagazineCargoGlobal	["ACE_Clacker",3];
+		_vehicle addItemCargoGlobal	["ACE_Clacker",3];
 		_vehicle addMagazineCargoGlobal ["UK3CB_BAF_1Rnd_HE_Grenade_Shell", 6];
 		_vehicle addMagazineCargoGlobal ["UK3CB_BAF_1Rnd_HEDP_Grenade_Shell", 3];
 		_vehicle addMagazineCargoGlobal ["UK3CB_BAF_1Rnd_Smoke_Grenade_shell", 2];
