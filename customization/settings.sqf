@@ -16,7 +16,7 @@ if (isServer) then { //This scope is only for the server
 	//Ticket pools for different sides
 	FW_RespawnTicketsWest = 8;
 	publicVariable "FW_RespawnTicketsWest";
-	FW_RespawnTicketsEast = 0;
+	FW_RespawnTicketsEast = 7;
 	publicVariable "FW_RespawnTicketsEast";
 	FW_RespawnTicketsInd = 0;
 	publicVariable "FW_RespawnTicketsInd";
