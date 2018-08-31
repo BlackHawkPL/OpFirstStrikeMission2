@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=1526;
+		nextID=1528;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=298;
+		nextID=318;
 	};
 	class Camera
 	{
-		pos[]={12172.353,206.91606,12721.161};
-		dir[]={-0.76616764,-0.52269632,-0.37414584};
-		up[]={-0.46975568,0.85244507,-0.22940089};
-		aside[]={-0.43885508,1.0131189e-006,0.89867425};
+		pos[]={8593.3994,200.03172,11898.22};
+		dir[]={0.59313279,-0.40195772,-0.6975984};
+		up[]={0.26037675,0.91565675,-0.30623513};
+		aside[]={-0.76185244,-8.0122845e-008,-0.64776504};
 	};
 };
 binarizationWanted=0;
@@ -379,7 +379,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=169;
+		items=171;
 		class Item0
 		{
 			dataType="Logic";
@@ -11088,7 +11088,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8931.0039,213.46808,11739.421};
+				position[]={8930.5254,213.25983,11741.586};
 				angles[]={0.10230894,0.25626177,6.2618537};
 			};
 			side="Empty";
@@ -11099,7 +11099,6 @@ class Mission
 			};
 			id=1000;
 			type="rhs_bmd1p";
-			atlOffset=-0.0038299561;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -19982,7 +19981,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={4726.0752,12.192138,2561.6685};
+				position[]={4726.0757,12.192119,2561.6682};
 				angles[]={0,4.1096044,0};
 			};
 			side="Empty";
@@ -19991,11 +19990,11 @@ class Mission
 			{
 				init="call{[this, ""Mi-8MTV-3"", ""Russian Forces""] call FNC_TrackAsset; if (local this) then {this call compile preprocessFileLineNumbers ""customization\scripts\RUheli.sqf"";};}";
 				name="ru_heli1";
-				pylons="rhs_mag_upk23_ofzt;;;rhs_mag_rbk250_ao1;";
+				pylons="rhs_mag_upk23_ofzt;;;;";
 			};
 			id=1168;
 			type="RHS_Mi8MTV3_vdv";
-			atlOffset=0.047025681;
+			atlOffset=0.046999931;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -20013,7 +20012,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
 						};
 					};
 				};
@@ -20044,7 +20043,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={4765.498,12.277531,2542.3745};
+				position[]={4765.4985,12.277488,2542.3743};
 				angles[]={0,4.1096044,0};
 			};
 			side="Empty";
@@ -20053,11 +20052,11 @@ class Mission
 			{
 				init="call{[this, ""Mi-8MTV-3"", ""Russian Forces""] call FNC_TrackAsset; if (local this) then {this call compile preprocessFileLineNumbers ""customization\scripts\RUheli.sqf"";};}";
 				name="ru_heli2";
-				pylons="rhs_mag_upk23_ofzt;;;rhs_mag_rbk250_ao1;";
+				pylons="rhs_mag_upk23_ofzt;;;;";
 			};
 			id=1171;
 			type="RHS_Mi8MTV3_vdv";
-			atlOffset=0.047042847;
+			atlOffset=0.046999931;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -20075,7 +20074,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
 						};
 					};
 				};
@@ -23497,7 +23496,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="call{this addAction [""refuel"", ""customization\scripts\rearmRU.sqf"", true]; this addAction [""rearm"", ""customization\scripts\rearmRU.sqf"", false]; if (isServer) then {this setVariable [""fuelLeft"", 0.08, true]; this setVariable [""ammoLeft"", 3, true];}}";
+				init="call{this addAction [""refuel"", ""customization\scripts\rearmRU.sqf"", true]; this addAction [""rearm"", ""customization\scripts\rearmRU.sqf"", false]; if (isServer) then {this setVariable [""fuelLeft"", 0.08, true]; this setVariable [""ammoLeft"", 2, true];}}";
 				name="RU_FARP1";
 			};
 			id=1290;
@@ -23515,7 +23514,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="call{this addAction [""refuel"", ""customization\scripts\rearmRU.sqf"", true]; this addAction [""rearm"", ""customization\scripts\rearmRU.sqf"", false]; if (isServer) then {this setVariable [""fuelLeft"", 0.08, true]; this setVariable [""ammoLeft"", 3, true];}}";
+				init="call{this addAction [""refuel"", ""customization\scripts\rearmRU.sqf"", true]; this addAction [""rearm"", ""customization\scripts\rearmRU.sqf"", false]; if (isServer) then {this setVariable [""fuelLeft"", 0.08, true]; this setVariable [""ammoLeft"", 2, true];}}";
 				name="RU_FARP2";
 			};
 			id=1291;
@@ -23904,7 +23903,7 @@ class Mission
 			type="rectangle";
 			a=11.591;
 			b=876.61823;
-			angle=55.134586;
+			angle=55.134571;
 			id=1340;
 			atlOffset=41.565903;
 		};
@@ -28259,6 +28258,33 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item169
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={8604.9541,187.90372,11879.82};
+			};
+			name="fw_east_respawn";
+			id=1526;
+			type="Logic";
+		};
+		class Item170
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8603.9854,188.81015,11889.025};
+				angles[]={0.10230894,2.7416711,0.062584557};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1527;
+			type="RHS_Ural_Open_VDV_01";
 		};
 	};
 };
