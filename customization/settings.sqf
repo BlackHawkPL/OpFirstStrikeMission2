@@ -1,5 +1,5 @@
 ace_cookoff_enable = false; //this disables cookoff fire effect
-ace_cookoff_enableAmmoCookoff = false; //this disables secondary explosions
+[{time > 10}, {ace_cookoff_enableAmmoCookoff = false;}] call CBA_fnc_waitUntilAndExecute; //this disables secondary explosions
 
 if (isServer) then { //This scope is only for the server
 
@@ -38,5 +38,8 @@ if (!isDedicated) then { //This scope is only for the player
 			FW_RespawnTickets = 1;//If respawn is enabled you must create empty game logics, for respawn points, following the name format fw_side_respawn. Example: fw_west_respawn
 			
 		}; //End of west case
+		case east: {
+			FW_RespawnTickets = 1;
+		};
 	}; //End of switch
 };

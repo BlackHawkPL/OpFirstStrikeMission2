@@ -220,7 +220,7 @@ case (package + "ARPG"): {
 	["rhs_mag_rgd5", 2] call FNC_AddItem; //Frag grenade
 	
 	["rhs_rpg7_OG7V_mag",1] call FNC_AddItem;  //GP-25 HE
-	["rhs_rpg7_PG7VM_mag",2] call FNC_AddItem;  //GP-25 SMK
+	["rhs_rpg7_PG7VL_mag",2] call FNC_AddItem;  //GP-25 SMK
 	
 	["rhs_weap_ak74mr"] call FNC_AddItem; //Primary rifle
 		["rhs_acc_dtk1983"] call FNC_AddItem; //Muzzle
@@ -246,7 +246,7 @@ case (package + "RPG"): {
 	["rhs_mag_rgd5", 1] call FNC_AddItem; //Frag grenade
 	
 	["rhs_rpg7_OG7V_mag",1] call FNC_AddItem;  //GP-25 HE
-	["rhs_rpg7_PG7VM_mag",2] call FNC_AddItem;  //GP-25 SMK
+	["rhs_rpg7_PG7VL_mag",2] call FNC_AddItem;  //GP-25 SMK
 	
 	["rhs_weap_ak74mr"] call FNC_AddItem; //Primary rifle
 		["rhs_acc_dtk1983"] call FNC_AddItem; //Muzzle

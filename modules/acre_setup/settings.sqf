@@ -84,7 +84,7 @@ FW_ChannelNames = [
 //BABEL
 //////////////
 
-FW_enable_babel = true;
+FW_enable_babel = false;
 
 /*
  * FNC_SetLanguages

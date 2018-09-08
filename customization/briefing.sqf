@@ -166,7 +166,7 @@ Neither side may move more than 10 meters until the 5 minute setup timer expires
 ENDTAB;
 
 NEWTAB("Game Mastering") //This is shown for everyone
-In order to end the mission the GM should type 'condition = 1' for an Opfor victory. The GM should type 'condition = 2' for a Blufor victory.
+Mission should be ended manually by a GM via ""end text"" call FNC_EndMission; remotely on server.
 ENDTAB;
 
 DISPLAYBRIEFING();
