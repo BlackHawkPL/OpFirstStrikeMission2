@@ -14,7 +14,7 @@ A Russian Airborne Regiment continues to attack from west to east. One of their 
 <br/>
 1.b.1. Composition. Enemy forces in our sector are comprised of a reduced company of tracked airborne VDV Infantry. Vehicle support consists 4 x BMD-1P. Dismounts are expected to have standard Soviet small arms such as: PKM, AK-74, RPG-7/RPG-26, as well as NVG capabilities.
 <br/>
-Enemy rotary assets were seen operating in sector and are compromised of Mi-8MTV. With the loss of ADA 2, we except enemy forces to use these assets for direct fire support and rapid troop deployment.
+Enemy rotary assets were seen operating in sector and are compromised of Mi-8MTV. With the loss of any ADA asset, we except enemy forces to use these assets for direct fire support and rapid troop deployment.
 1.b.2. Disposition. Enemy forces are currently massing somewhere to the West of our location. The forward aerial resupply point is likely 10-20km away.
 <br/>
 1b.3. Enemy Most Likely Course of Action. Enemy forces will attempt to destroy our forward observation points and seize control of Key Terrain 1, 2, and/or 3 (TRP 30, 31, 32 respectively). Once they seized these Key Terrain pieces, they will use direct observation to determine our disposition, attempt to establish fire superiority via direct fire, and assault from west to east.
@@ -23,7 +23,7 @@ Enemy rotary assets were seen operating in sector and are compromised of Mi-8MTV
 <br/>
 1.c.1. A/1-63 is defending in-depth in order to deny key terrain from use by the enemy. An engineer section continues to improve the airstrip during daylight hours. The engineers will support the final line of defense at the airfield (via 9 x re-spawn tickets).
 <br/>
-1.c.2.) 2 & 4 PLT are occupying a defensive posture to our immediate East/Southeast. A platoon of host-nation forces retreated to the ADA sites and will not move until properly reinforced. There are friendly AI placed in that area. Ensure to PID targets.
+1.c.2.) 2 and 4 PLT are occupying a defensive posture to our immediate East/Southeast. A platoon of host-nation forces retreated to the ADA sites and will not move until properly reinforced. There are friendly AI placed in that area. Ensure to PID targets.
 ENDTAB;
 
 
@@ -48,30 +48,25 @@ NEWTAB("IV. Service Support:")
 Extra ammunition and ordinance are loaded in the vehicles.
 ENDTAB;
 
-NEWTAB("V. Command & Signal:")
+NEWTAB("V. Command and Signal:")
 <br/> ------ 3 Platoon NET -------
 <br/>
 <br/>3 PLT HQ - 3,0 - LR 1 / SR 4
 <br/>3 PLT - 1,3 Charlie (1 Section)- LR 1 / SR 1
-<br/>3 PLT - 2,3 Echo (2 Section- LR 1 / SR 2
-<br/>3 PLT - 3,3 Gulf (3 Section)- LR 1 / SR 3
+<br/>3 PLT - 1,3 Echo (2 Section- LR 1 / SR 2
+<br/>3 PLT - 1,3 Gulf (3 Section)- LR 1 / SR 3
 <br/>3 PLT - 5,3, Alpha (Mortars) - LR 1 / SR 5
 <br/>3 PLT - 1,6, Charlie (Medics)- LR 1 / SR 6
-<br/>3 PLT - 4,3 Charlie (QRF Section)- LR 1 / SR 10
+<br/>3 PLT - 82,J Juliet (Engineers)- LR 1 / SR 10
 <br/>Host Nation - Locals 2 - LR 1 / SR 7
 <br/> ------ Fires NET - Channel 2
 ENDTAB;
 
 NEWTAB("C. General Notes:")
-Mission Notes
+Mission Notes<br/>
 o Friendly forces have 8 respawn tickets. The dead will respawn in the airfield barracks. They have access to ammo/medical supplies via crates in the barracks.<br/>
 o Destruction of ADA sites will be carried over to subsequent mission. ADA 2 will be destroyed in subsequent mission regardless of mission 1 outcome.<br/>
 ENDTAB;
-
-NEWTAB("APPENDIX A - VEHICLE LOADOUT:")
-	<br/>more to follow
-ENDTAB;
-
 
 }; //End of west case
 
@@ -101,7 +96,7 @@ ENDTAB;
 NEWTAB("1.c. Friendly Forces:")
 1.c. Friendly:<br/>
 <br/>
-1.c.1.) Friendly Overview: 91st Tracked Airborne Infantry Regiment attacks to seize key terrain: (1) Krasnostav Airfield and (2) Berezino Harbor. Phase 1, 91 VDV attacks to destroy enemy air-defense-artillery (ADA) in order to enable freedom of maneuver for friendly rotary assets. Phase 2, 91 VDV conducts attack to seize airstrip & harbor.<br/>
+1.c.1.) Friendly Overview: 91st Tracked Airborne Infantry Regiment attacks to seize key terrain: (1) Krasnostav Airfield and (2) Berezino Harbor. Phase 1, 91 VDV attacks to destroy enemy air-defense-artillery (ADA) in order to enable freedom of maneuver for friendly rotary assets. Phase 2, 91 VDV conducts attack to seize airstrip and harbor.<br/>
 1.c.2. B/91 Overview (your Company): Combat losses were sustained during the attack on the ADA sites. Upwards of 60% of BMD were disabled or destroyed. The remaining 3 x were consolidated into 1 Platoon.<br/>
 1.c.3. Adjacent Units. C/91(notional) is operating to our South to secure Berezino Harbor. 
 
@@ -113,8 +108,9 @@ ENDTAB;
 
 NEWTAB("3. Execution:")
 <br/>Notes on Execution:
+<br/>
 o Enemy forces have limited respawn tickets. The dead will respawn as QRF.<br/>
-o Destruction of ADA sites will be carried over to subsequent mission. ADA 2 will be destroyed in subsequent mission regardless of mission 1 outcome.<br/>
+o Destruction of ADA sites will be carried over to subsequent mission.<br/>
 
 ENDTAB;
 
@@ -122,7 +118,7 @@ NEWTAB("4. Service Support:")
 <br/> more to follow
 ENDTAB;
 
-NEWTAB("V. Command & Signal:")
+NEWTAB("V. Command and Signal:")
 <br/> ------ B Company - Streltsy 0 ------
 <br/>
 <br/>COY HQ - COY - Streltsy 0 - LR 4 / SR 10
@@ -144,10 +140,6 @@ NEWTAB("V. Command & Signal:")
 <br/>1 PLT - Wingman - Streltsy 331 - LR 3 / SR 7
 <br/>1 PLT - Wingman - Streltsy 332 - LR 3 / SR 8
 <br/>1 PLT - Wingman - Streltsy 333 - LR 3 / SR 9
-ENDTAB;
-
-NEWTAB("APPENDIX A - VEHICLE LOADOUT:")
-more to follow
 ENDTAB;
 
 }; //End of west case
