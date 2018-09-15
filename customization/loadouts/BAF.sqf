@@ -178,7 +178,7 @@ case (package + "MOSL"): {
 	ADD_GROUP(ifak);
 	ADD_GROUP(items);
 	
-	["Binocular"] call FNC_AddItem; //Binos
+	["ACE_VectorDay"] call FNC_AddItem; //Binos
 	
 	["ACRE_PRC148", 1] call FNC_AddItem; //Long range radio
 	
@@ -188,6 +188,8 @@ case (package + "MOSL"): {
 	["rhs_mag_an_m8hc", 1] call FNC_AddItem; //White smoke
 	["rhs_mag_m18_green", 1] call FNC_AddItem; //Green Smoke
 	["rhs_mag_m18_red", 1] call FNC_AddItem; //Red Smoke
+	["ACE_microDAGR", 1, "vest"] call FNC_AddItem; //microdagr
+	["ACE_MapTools", 1, "vest"] call FNC_AddItem;
 	
 	["UK3CB_BAF_L85A2_RIS"] call FNC_AddItem; //Primary rifle
 			["UK3CB_BAF_Eotech"] call FNC_AddItem; //Optic
