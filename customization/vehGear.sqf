@@ -38,7 +38,7 @@ switch (_type) do {
 		clearItemCargoGlobal _vehicle;
 
 		_vehicle addMagazineCargoGlobal ["UK3CB_BAF_762_200Rnd", 6];
-		_vehicle addMagazineCargoGlobal ["UK3CB_BAF_32Rnd_40mm_G_Box", 9];
+		_vehicle addMagazineCargoGlobal ["UK3CB_BAF_32Rnd_40mm_G_Box", 6];
 		_vehicle addMagazineCargoGlobal ["UK3CB_BAF_556_30Rnd", 10];
 		_vehicle addMagazineCargoGlobal ["UK3CB_BAF_556_30Rnd_T", 3];
 		_vehicle addMagazineCargoGlobal ["UK3CB_BAF_762_100Rnd", 2];
